@@ -1,0 +1,11 @@
+The participants.py is a simple scraper that looks into all the pages that were created under http://p2pu.org/en/groups/knight-mozilla-learning-lab/people/.
+It picks up all the profile pages and with the location info listed there it does a reverse geo-coding to get the approximate latitude and longitude. 
+
+These values are dumped into /tmp/results by running python participants.py > /tmp/results. Once completed the output is copy pasted into the body of a html file, that contains some javascript to plot the name, latitude longitude, user's avatar and interests into a world map. The javascript uses Google Maps version 3.
+
+
+Bugs:
+This is just for fun hacky system, written to get familiar with javascript. That should tell you about the code quality.
+Since the users in the P2PU have shared only their city and country location, two users' avatars get superimposed on one another. To get around that some random bits are added to the latitude and longitude so that they are close enough and do not occlude one another.
+
+Also, I didn't look much into handling wierd characters in city names "Szikszó, HU" - the special character does not work well in the url and discarded it.
