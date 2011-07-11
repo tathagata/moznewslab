@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>Google Maps JavaScript API v3 Example: Info Window Simple</title>
+<link href="http://code.google.com/apis/maps/documentation/javascript/examples/default.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+<script type="text/javascript">
+  function initialize() {
+    
+    var myLatlng = new google.maps.LatLng(37.8043637, -122.2711137);
+    var myOptions = {
+      zoom: 3,
+      center: myLatlng,
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    }
+
+    var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);    
+    setMarkers(map, locations);
+}
+
+var locations = [
+[' Alex Samur ',' http://www.gravatar.com/avatar/5b0077767065a41b7ed39042019ef75b?s=54&d=http%3A%2F%2Fnew.p2pu.org%2Fmedia%2Fimages%2Fmember-missing.png&r=g ',' http://p2pu.org/en/asamur/ ', 49.2904308286, -122.835225387 , 1 ,'  '],
+[' Phillip Smith ',' http://www.gravatar.com/avatar/0ef2ace117db108ffd238157b0973f90?s=54&d=http%3A%2F%2Fnew.p2pu.org%2Fmedia%2Fimages%2Fmember-missing.png&r=g ',' http://p2pu.org/en/phillipadsmith/ ', 43.7840124207, -78.8914088708 , 2 ,' getting things done '],
+[' Ben Moskowitz ',' http://p2pu.org/media/images/profiles/1/5ae0c1c8a5260bc7b6648f6fbd115c35.png ',' http://p2pu.org/en/benmoskowitz/ ', 38.2705888597, -122.155656928 , 3 ,'  '],
+[' Jacob Caggiano ',' http://p2pu.org/media/images/profiles/36/961f65ae4eb7609aed2d8d24e8704295.png ',' http://p2pu.org/en/futuresoup/ ', 47.7964075117, -121.906886023 , 4 ,' audio/data/info design '],
+[' Laura Hilliger ',' http://p2pu.org/media/images/profiles/1/55ba7209cea0542fada6a3da064f5068.jpg ',' http://p2pu.org/en/BigFunArts/ ', 51.1346834904, 13.7707964374 , 5 ,'  '],
+[' Nikki Usher ',' http://www.gravatar.com/avatar/4df91a480aefc00b9aeb6ff739a4dac0?s=54&d=http%3A%2F%2Fnew.p2pu.org%2Fmedia%2Fimages%2Fmember-missing.png&r=g ',' http://p2pu.org/en/nusher/ ', 39.1715513095, -76.8213336673 , 6 ,' academia/news/technology '],
+[' John Bell ',' http://p2pu.org/media/images/profiles/36/2bcd9a5658f5a9ae4aceb6443bdc0c2c.jpg ',' http://p2pu.org/en/wahwho/ ', 45.3648626339, -68.2505197056 , 7 ,' architecture/building '],
+[' Amy Zerba ',' http://p2pu.org/media/images/profiles/36/c81e728d9d4c2f636f067f89cc14862c.jpg ',' http://p2pu.org/en/amyzerba/ ', 29.981240438, -81.9796148151 , 8 ,' designing for web and print/build an app for mobile platforms '],
+[' Charlie Pinder ',' http://www.gravatar.com/avatar/6c3efb0c948d0d6635df0211e5dcceea?s=54&d=http%3A%2F%2Fnew.p2pu.org%2Fmedia%2Fimages%2Fmember-missing.png&r=g ',' http://p2pu.org/en/charlie.pinder/ ', 52.8992162618, -1.60961794047 , 9 ,' as3 '],
+[' Seth Vincent ',' http://www.gravatar.com/avatar/652e02cbd134e0e92f3f81fe14bda3d1?s=54&d=http%3A%2F%2Fnew.p2pu.org%2Fmedia%2Fimages%2Fmember-missing.png&r=g ',' http://p2pu.org/en/seth.vincent/ ', 47.1476747071, -122.575438942 , 10 ,'  '],
+[' manuel pinto ',' http://p2pu.org/media/images/profiles/36/aab3238922bcc25a6f606eb525ffdc56.jpg ',' http://p2pu.org/en/manuel.guimaraes/ ', -22.6588941083, -47.0075908203 , 11 ,'  '],
+[' Jason Spingarn-Koff ',' http://p2pu.org/media/images/profiles/36/45c48cce2e2d7fbdea1afc51c7c6ad26.jpg ',' http://p2pu.org/en/jasonskoff/ ', 42.8341381787, -70.9062592487 , 12 ,' business development '],
+[' Nicole Cifani ',' http://p2pu.org/media/images/profiles/36/eca79cef0321eeb49e4594bb3490836f.jpg ',' http://p2pu.org/en/nicolecifani/ ', 34.3290098473, -118.025744339 , 13 ,' business development/arts/user interface design '],
+[' Dan Whaley ',' http://p2pu.org/media/images/profiles/36/f97dd2a8674980cf9791f29f1a8e8eac.jpg ',' http://p2pu.org/en/dwhaley/ ', 37.7760078396, -122.093620948 , 14 ,'  '],
+[' Philipp Tsipman ',' http://p2pu.org/media/images/profiles/36/70efdf2ec9b086079795c442636b55fb.jpg ',' http://p2pu.org/en/philippt/ ', 40.7838160118, -73.7811420578 , 15 ,'  '],
+[' Andrew Jennings ',' http://p2pu.org/media/images/profiles/36/d9f3eb2859ee640093bfa3605d532939.jpg ',' http://p2pu.org/en/abjennings/ ', 33.4386401899, -111.397641933 , 16 ,' apache/beautiful mathematics/browser extension development '],
+[' Miguel Angel García Ramírez ',' http://p2pu.org/media/images/profiles/36/5d2887923d40d63611ddc1d24c1c4fd6_2.jpg ',' http://p2pu.org/en/miguel_garcia_mxd/ ', 22.0835782607, -101.985507635 , 17 ,' development/a.i./journalism '],
+[' Daniel Schultz ',' http://www.gravatar.com/avatar/d60161b5a7b5ad8de7bd71fb3b83c544?s=54&d=http%3A%2F%2Fnew.p2pu.org%2Fmedia%2Fimages%2Fmember-missing.png&r=g ',' http://p2pu.org/en/slifty/ ', 42.8253852561, -70.9863307673 , 18 ,' technology/graphic design '],
+[' Mark James ',' http://www.gravatar.com/avatar/4891b0faf6940a1992da2801b52c4735?s=54&d=http%3A%2F%2Fnew.p2pu.org%2Fmedia%2Fimages%2Fmember-missing.png&r=g ',' http://p2pu.org/en/mrj/ ', -33.6668002384, 151.316367442 , 19 ,'  '],
+[' Bharath Channakeshavaiah ',' http://p2pu.org/media/images/profiles/36/e8d76a075ff20f5d2114d7ed05d3d7f8.jpg ',' http://p2pu.org/en/bharath.keshav/ ', 13.0847083689, 77.6366304189 , 20 ,' creating web technology concepts/connecting with other technologists/interest based news distribution '],
+[' Sedef Gavaz ',' http://p2pu.org/media/images/profiles/36/434305caa9e995d4a9bad1bd89ff3f2f_1.jpg ',' http://p2pu.org/en/sedef/ ', 51.5564551052, 0.0795217154789 , 21 ,' design '],
+[' Alan Haburchak ',' http://www.gravatar.com/avatar/36830382c05112201e8b7069a80c40f0?s=54&d=http%3A%2F%2Fnew.p2pu.org%2Fmedia%2Fimages%2Fmember-missing.png&r=g ',' http://p2pu.org/en/ahaburchak/ ', 41.1975287678, -73.8988066858 , 22 ,' css/data-scraping scripts '],
+[' Mark Boas ',' http://www.gravatar.com/avatar/4c1f7ad0026132535ddc7af0a48ca8be?s=54&d=http%3A%2F%2Fnew.p2pu.org%2Fmedia%2Fimages%2Fmember-missing.png&r=g ',' http://p2pu.org/en/markbo/ ', 43.9391224665, 11.3730512672 , 23 ,' audio/communication/html5 '],
+[' Stijn Debrouwere ',' http://www.gravatar.com/avatar/dc357b7207aad39b2aeaafbb60fa8dce?s=54&d=http%3A%2F%2Fnew.p2pu.org%2Fmedia%2Fimages%2Fmember-missing.png&r=g ',' http://p2pu.org/en/stijn/ ', 51.3432506777, 4.35838583888 , 24 ,' coding/content management '],
+[' Shaun McWhinnie ',' http://www.gravatar.com/avatar/9731752e5b9c7c6ccea22cf1f9cd955a?s=54&d=http%3A%2F%2Fnew.p2pu.org%2Fmedia%2Fimages%2Fmember-missing.png&r=g ',' http://p2pu.org/en/Shaun/ ', 56.0896910111, -3.78263066081 , 25 ,'  '],
+[' Lynn Cook ',' http://p2pu.org/media/images/profiles/1/14f54e5dd56d852c09d2e6a584e1f9f5_1.jpg ',' http://p2pu.org/en/lynncook/ ', -33.474716728, 151.415544631 , 26 ,'  '],
+[' Alison Jean Cole ',' http://p2pu.org/media/images/profiles/1/3cc08e00a815889901eae381b0baf696.jpg ',' http://p2pu.org/en/alison/ ', 45.7155562566, -122.351542763 , 27 ,' ecology/archaic science/biogeochemistry '],
+[' Laura Hilliger ',' http://p2pu.org/media/images/profiles/36/f18c78819bc5c67c1d6eab2430d96ed9.jpg ',' http://p2pu.org/en/laurah/ ', 51.0929361215, 14.1375417013 , 28 ,' a/a '],
+[' Zuzel Vera ',' http://p2pu.org/media/images/profiles/1/1fd1b1b663f7d191cb70f23c9e0879e1_6.jpg ',' http://p2pu.org/en/zuzelvp/ ', 43.833642184, -79.2340671688 , 29 ,' bash '],
+[' David Gerő ',' http://p2pu.org/media/images/profiles/36/becb7442cd3db7e6a453995f9de635a0.png ',' http://p2pu.org/en/davidpgero/ ', 47.6066684645, 19.0519690462 , 30 ,'  '],
+[' Melanie Sill ',' http://p2pu.org/media/images/profiles/36/e0098e6a608ef3912e4ed508a31b5876.jpg ',' http://p2pu.org/en/melaniesill/ ', 39.0535063605, -120.830418808 , 31 ,' coverage strategy/cuture/audience definition '],
+[' Artem Dudarev ',' http://www.gravatar.com/avatar/f16616fe63aaceb63b43140c028d7c42?s=54&d=http%3A%2F%2Fnew.p2pu.org%2Fmedia%2Fimages%2Fmember-missing.png&r=g ',' http://p2pu.org/en/dudarev/ ', 48.0413861965, 38.2150620653 , 32 ,' javascript '],
+[' Rhiannon Coppin ',' http://p2pu.org/media/images/profiles/36/6f4922f45568161a8cdf4ad2299f6d23.jpg ',' http://p2pu.org/en/rhiannon.coppin/ ', 49.3597294948, -122.711648856 , 33 ,'  '],
+[' Juan Gonzalez ',' http://p2pu.org/media/images/profiles/36/c20ad4d76fe97759aa27a0c99bff6710.jpg ',' http://p2pu.org/en/juang/ ', 43.9258143963, -78.9732388367 , 34 ,'  '],
+[' Kabir Soorya ',' http://www.gravatar.com/avatar/b59ff7fa4115120bb14a5770c43e26fc?s=54&d=http%3A%2F%2Fnew.p2pu.org%2Fmedia%2Fimages%2Fmember-missing.png&r=g ',' http://p2pu.org/en/devan.lochees/ ', 40.9697814783, -73.7231703675 , 35 ,'  '],
+[' Cody Shotwell ',' http://p2pu.org/media/images/profiles/36/e4da3b7fbbce2345d7772b0674a318d5.jpg ',' http://p2pu.org/en/cody.shotwell/ ', 47.3768889905, -122.478546074 , 36 ,' adobe connect/interaction design '],
+[' Ted Han ',' http://www.gravatar.com/avatar/1ed56a3c8445bfafc7a545d9a63175ce?s=54&d=http%3A%2F%2Fnew.p2pu.org%2Fmedia%2Fimages%2Fmember-missing.png&r=g ',' http://p2pu.org/en/knowtheory/ ', 40.4252433405, -82.9289289376 , 37 ,' computational linguistics/computational linguistics/inefficiencies in researching and analysis '],
+[' Daniel Walmsley ',' http://www.gravatar.com/avatar/a1675bd7a3e8c9d6540de217d168da14?s=54&d=http%3A%2F%2Fnew.p2pu.org%2Fmedia%2Fimages%2Fmember-missing.png&r=g ',' http://p2pu.org/en/goldsounds/ ', 40.748360073, -73.9379825416 , 38 ,'  '],
+[' Noah Echols ',' http://p2pu.org/media/images/profiles/36/c74d97b01eae257e44aa9d5bade97baf.jpg ',' http://p2pu.org/en/nechols1/ ', 34.2368424357, -84.226494797 , 39 ,'  '],
+[' Regnard Raquedan ',' http://p2pu.org/media/images/profiles/36/da272c4919e2fd225b8307eeaeaec291.png ',' http://p2pu.org/en/regnard/ ', 14.6884862795, 121.403087977 , 40 ,' blogging/usability/app development '],
+[' Kersten A. Riechers ',' http://www.gravatar.com/avatar/f33dd80464f764a71ec97ac085d9bdeb?s=54&d=http%3A%2F%2Fnew.p2pu.org%2Fmedia%2Fimages%2Fmember-missing.png&r=g ',' http://p2pu.org/en/kersten/ ', 50.0527043661, 8.81969495451 , 41 ,'  '],
+[' Jordan Wirfs-Brock ',' http://p2pu.org/media/images/profiles/16/6512bd43d9caa6e02c990b0a82652dca.jpg ',' http://p2pu.org/en/jordanwb/ ', 40.3240149211, -105.20616464 , 42 ,'  '],
+[' Shaminder Dulai ',' http://p2pu.org/media/images/profiles/36/3c59dc048e8850243be8079a5c74d079.jpg ',' http://p2pu.org/en/shaminder.dulai/ ', 37.4230484876, -121.450994292 , 43 ,'  '],
+[' Lucas Cioffi ',' http://www.gravatar.com/avatar/6381fb3444afd976407b417e9a435159?s=54&d=http%3A%2F%2Fnew.p2pu.org%2Fmedia%2Fimages%2Fmember-missing.png&r=g ',' http://p2pu.org/en/LucasCioffi/ ', 39.0491190746, -76.5766255099 , 44 ,'  '],
+[' Michael Wells ',' http://p2pu.org/media/images/profiles/36/9bf31c7ff062936a96d3c8bd1f8f2ff3.jpg ',' http://p2pu.org/en/michael.d.wells/ ', 51.4050654615, 0.163364785787 , 45 ,'  '],
+[' Neil Dawson ',' http://www.gravatar.com/avatar/978217aeb4c2b99ebaf9418d32f21f55?s=54&d=http%3A%2F%2Fnew.p2pu.org%2Fmedia%2Fimages%2Fmember-missing.png&r=g ',' http://p2pu.org/en/neil/ ', 51.980558034, -0.0513954036094 , 46 ,' design/net neutrality/software development '],
+[' Jamie King ',' http://p2pu.org/media/images/profiles/36/c9f0f895fb98ab9159f51fd0297e236d.jpg ',' http://p2pu.org/en/jamie/ ', 51.4753839332, -2.44927780106 , 47 ,' crowdfunding/how to get fresh inputs into the news ecosystem/and everything else besides '],
+[' John Bell ',' http://www.gravatar.com/avatar/f27f3780f91af97e569f843e6fb15b65?s=54&d=http%3A%2F%2Fnew.p2pu.org%2Fmedia%2Fimages%2Fmember-missing.png&r=g ',' http://p2pu.org/en/johnb/ ', 45.2345984781, -68.5805451183 , 48 ,'  '],
+[' Saleem Khan ',' http://www.gravatar.com/avatar/e4f8a0dd856a793faea8121a06d4a9ea?s=54&d=http%3A%2F%2Fnew.p2pu.org%2Fmedia%2Fimages%2Fmember-missing.png&r=g ',' http://p2pu.org/en/saleemk/ ', 43.8392454205, -78.8851431304 , 49 ,'  '],
+[' Corbin Smith ',' http://www.gravatar.com/avatar/b89e6a14d1d11269e71fd6708dfb2f0f?s=54&d=http%3A%2F%2Fnew.p2pu.org%2Fmedia%2Fimages%2Fmember-missing.png&r=g ',' http://p2pu.org/en/corbin/ ', 43.8793152014, -79.2810930775 , 50 ,' adobe creative suite '],
+[' Travis Kriplean ',' http://p2pu.org/media/images/profiles/36/d450c5dbcc10db0749277efc32f15f9f.jpg ',' http://p2pu.org/en/travis/ ', 47.7430484367, -122.166822714 , 51 ,' interaction design/discussion/graphic design '],
+[' Chris Keller ',' http://p2pu.org/media/images/profiles/35/2b3cebc4beb94d0dd8ab6705a4a9da05.jpg ',' http://p2pu.org/en/chrislkeller/ ', 43.4718181184, -89.2253687989 , 52 ,' css/and/django/python '],
+[' Julien Dorra ',' http://www.gravatar.com/avatar/d9ba3331cf0f44a46b87afe4517a3c63?s=54&d=http%3A%2F%2Fnew.p2pu.org%2Fmedia%2Fimages%2Fmember-missing.png&r=g ',' http://p2pu.org/en/juliendorra/ ', 49.2476422851, 2.47943480213 , 53 ,'  '],
+[' Marian Liu ',' http://p2pu.org/media/images/profiles/36/10ca131d0ecf13aba579ce43546bfb4f.jpg ',' http://p2pu.org/en/marianbackstage/ ', 48.0185253687, -121.932649407 , 54 ,' audio/cell phone apps/extending newspapers&#39; reach '],
+[' Cole Gillespie ',' http://www.gravatar.com/avatar/0e214ea6b99af0ab762bb9c87a4e9dc8?s=54&d=http%3A%2F%2Fnew.p2pu.org%2Fmedia%2Fimages%2Fmember-missing.png&r=g ',' http://p2pu.org/en/coleg/ ', 36.261961784, -78.2558491712 , 55 ,' javascript/automated testing/journalism '],
+[' Nicola Hughes ',' http://www.gravatar.com/avatar/272ad205f3623c6905a2498ba845e674?s=54&d=http%3A%2F%2Fnew.p2pu.org%2Fmedia%2Fimages%2Fmember-missing.png&r=g ',' http://p2pu.org/en/nicolarhughes/ ', 51.5866781792, -0.0959138326267 , 56 ,' data/computer '],
+[' John Tynan ',' http://p2pu.org/media/images/profiles/4/d3d9446802a44259755d38e6d163e820.jpg ',' http://p2pu.org/en/johntynan/ ', 49.1600449845, 2.30744635931 , 57 ,'  '],
+[' Engin Erdogan ',' http://www.gravatar.com/avatar/fa7489bf4e2fd10795bb7b3cd0b0ec1f?s=54&d=http%3A%2F%2Fnew.p2pu.org%2Fmedia%2Fimages%2Fmember-missing.png&r=g ',' http://p2pu.org/en/erdogan/ ', 41.09344636, -73.6004076568 , 58 ,'  '],
+[' Samuel Huron ',' http://p2pu.org/media/images/profiles/36/1f0e3dad99908345f7439f8ffabdffc4.jpg ',' http://p2pu.org/en/samuel.huron/ ', 49.1819651976, 2.63412281077 , 59 ,'  '],
+[' Ersun Warncke ',' http://www.gravatar.com/avatar/43b9c6008bd5f557bd1bfd46d0b6256c?s=54&d=http%3A%2F%2Fnew.p2pu.org%2Fmedia%2Fimages%2Fmember-missing.png&r=g ',' http://p2pu.org/en/ersun.warncke/ ', 40.4706262152, -111.393872443 , 60 ,'  '],
+[' Tobias Reitz ',' http://p2pu.org/media/images/profiles/36/b6d767d2f8ed5d21a44b0e5886680cb9.jpg ',' http://p2pu.org/en/tobiasr/ ', 50.0037278635, 9.09853562392 , 61 ,'  '],
+[' Tathagata Dasgupta ',' http://p2pu.org/media/images/profiles/36/58806e006b14b04a535784a5462d09b0.png ',' http://p2pu.org/en/tathagatadg/ ', 42.0256279832, -87.3714165705 , 62 ,' data mining/building communities/building killer  webapps '],
+[' Nicholas Doiron ',' http://p2pu.org/media/images/profiles/1/2b93fbdf27d43547bec8794054c28e00.jpg ',' http://p2pu.org/en/ndoiron/ ', 34.1414745032, -116.818721883 , 63 ,'  '],
+[' Laurian Gridinoc ',' http://p2pu.org/media/images/profiles/2/aaca0f5eb4d2d98a6ce6dffa99f8254b_2.png ',' http://p2pu.org/en/gridinoc/ ', 52.8932872054, -1.89189101753 , 64 ,' css3/artificial intelligence/data mining '],
+[' James Greenaway ',' http://p2pu.org/media/images/profiles/36/8f14e45fceea167a5a36dedd4bea2543.jpg ',' http://p2pu.org/en/jamesgreenaway/ ', 51.5926020268, 0.0914129693736 , 65 ,'  '],
+[' Trina Chiasson ',' http://www.gravatar.com/avatar/70db173e93f04fbdb0d4871f062789ca?s=54&d=http%3A%2F%2Fnew.p2pu.org%2Fmedia%2Fimages%2Fmember-missing.png&r=g ',' http://p2pu.org/en/trinachi/ ', 42.0058879801, -87.2352403371 , 66 ,'  '],
+[' Matt Terenzio ',' http://www.gravatar.com/avatar/c4736c8c289bfc3f9cb52dc49fc15554?s=54&d=http%3A%2F%2Fnew.p2pu.org%2Fmedia%2Fimages%2Fmember-missing.png&r=g ',' http://p2pu.org/en/mterenzio/ ', 41.5222784192, -73.2908624136 , 67 ,'  '],
+[' Raynor Vliegendhart ',' http://p2pu.org/media/images/profiles/36/ee929a87735437beed5889447a8dc0a9.png ',' http://p2pu.org/en/shinnonoir/ ', 52.3674508132, 4.8671867294 , 68 ,'  '],
+[' Brian Chirls ',' http://p2pu.org/media/images/profiles/36/a87ff679a2f3e71d9181a67b7542122c.jpg ',' http://p2pu.org/en/brianc/ ', 40.83676636, -73.8556551264 , 69 ,'  '],
+[' Bello David ',' http://p2pu.org/media/images/profiles/36/1679091c5a880faf6fb5e6087eb1b2dc.jpg ',' http://p2pu.org/en/dh.bello28/ ', 5.00493099314, -73.8065867555 , 70 ,' .net/networking analysis '],
+];
+  
+function setMarkers(map, locations) {
+   for (var i = 0; i < locations.length; i++) { 
+    var beach = locations[i];
+    var myLatLng = new google.maps.LatLng(beach[3], beach[4]);
+    var image = new google.maps.MarkerImage(beach[1],null, null, new google.maps.Point(0, 40), new google.maps.Size(40, 40));
+    var marker = new google.maps.Marker({
+        url: beach[2],
+        position: myLatLng,
+        map: map,
+        icon: image,        
+        title: beach[0],
+        zIndex: beach[5],
+    });
+    
+    var contentString = '<div><b>interests:</b>'+beach[6]+'<br/><a href="'+beach[2]+'" >'+beach[0]+'</a></div>';
+    
+    var infowindow = new google.maps.InfoWindow;
+    
+    bindInfoWindow(marker,contentString,infowindow);    
+  } 
+}
+
+function bindInfoWindow(marker,contentString,infowindow){
+  google.maps.event.addListener(marker, 'click', function() {
+      //window.location.href = marker.url;
+      infowindow.setContent(contentString);
+      infowindow.open(marker.map, marker);      
+    });
+}
+
+</script>
+</head>
+<body onload="initialize()">
+  <div id="map_canvas"></div>
+</body>
+
+</html>
+  
