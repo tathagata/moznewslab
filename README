@@ -1,16 +1,15 @@
-This simple application uses a web scraper and Google Maps Api, to put all the participants of Mozilla Knight news challenge in the same page. A python script scrapes out
-the participant's avatar, city and country and skills listed in their profile page. Then we use the google's maps api to do a reverse geocoding with the participants city and county info. Once it gets the latitude and longitude the avatar is plotted on a world map. If the participant has filled in the section for skills - they are shown whern some one clicks their avatar, along with a link to their profile in http://p2pu.org.
+This simple application uses a web scraper and Google Maps Api, to put all the participants of Mozilla Knight news challenge on the same page. A python script scrapes out the participant's avatar, city,country and skills listed in their profile page. Then we use the google's maps api to do a reverse geocoding and plot the avatars on a world map. If the participant has filled in the section for skills - they are shown whern some one clicks their avatar, along with a link to their profile in http://p2pu.org.
 
 To run:
 I am an automation freak, but since this is a one time run, I avoided trap of writing sexy bash scripts. So from a terminal:
 
 python participants.py > /tmp/results 
 
-The output is generated as a javascript array containg all the details of the participants. This is manually (:() copypasted into moznewslab.html file. This html uses Google's wonderful maps api to do all the magic. Github allows static html pages - so just push it to the repo and we have all the participants on one page.
+The output is generated as a javascript array containg all the details of the participants. This is manually (:() copypasted into moznewslab.html file. This html uses Google's wonderful maps api to do all the magic. 
 
 
 Bugs:
 This is just for fun hacky system, written to get familiar with javascript. That should tell you about the code quality.
-Since the paritcipants in http://p2pu.org have shared only their city and country location, there are a lot of approxiamtions going here which might throw you off by miles. Two users from the same city will have their avatars superimposed on one another since the separate call for reverse geo-coding returns the same lat long value. To get around this, some random bits are added to the latitude and longitude. So from zoomed out world view, things are acceptable and gives an overall idea of who is where. Coming to think of it, we can think of it as a feature to render you safety from online predators :D :D
+Since the paritcipants in http://p2pu.org have shared only their city and country location, there are a lot of approxiamtions going here which might throw you off by miles. Two users from the same city will have their avatars superimposed on one another since the separate call for reverse geo-coding returns the same lat long value. To get around this, some random bits are added to the latitude and longitude. So in a zoomed out world view, things look acceptable. Coming to think of it, we can think of it as a feature that renders you safety from online predators :D :D
 
 Also, I didn't look much into handling wierd characters in city names like "Szikszó, HU" - the special character was generating some errors so had to drop that participant.
