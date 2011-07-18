@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <title>WebGL Globe</title>
+  <title>Tweetsabers of News revolution: #MozNewsLab </title>
   <meta charset="utf-8">
   <style type="text/css">
     html {
@@ -11,7 +11,7 @@
     body {
       margin: 0;
       padding: 0;
-      background: #000000 url(/globe/loading.gif) center center no-repeat;
+      background: #000000 url(loading.gif) center center no-repeat;
       color: #ffffff;
       font-family: sans-serif;
       font-size: 13px;
@@ -47,15 +47,16 @@
 
     #title {
       position: absolute;
-      top: 5px;
-      width: 285px;
-      left: 10px;
+      bottom: 20px;
+      width: 320px;
+      left: 20px;
       background-color: rgba(0, 0, 0, 0.2);
-      font: 18px/20px Georgia;
-      padding: 10px;
+      font: 20px;
+      padding: 3px;
     }
 
     .year {
+
       font: 16px Georgia;
       line-height: 26px;
       height: 30px;
@@ -63,6 +64,7 @@
       float: left;
       width: 90px;
       color: rgba(255, 255, 255, 0.4);
+
       cursor: pointer;
       -webkit-transition: all 0.1s ease-out;
     }
@@ -77,13 +79,15 @@
     }
 
     #ce {
-      width: 107px;
-      height: 55px;
+      width: 177px;
+      height: 106px;
       display: block;
       position: absolute;
-      bottom: 15px;
-      left: 20px;
-      background: url(/globe/ce.png);
+      bottom: 75px;
+      left: 35px;
+      background: url(moznewslab.jpg);
+      -moz-border-radius: 5px;
+      border-radius: 5px;
     }
 
 
@@ -93,27 +97,22 @@
 
 <div id="container"></div>
 
-<div id="info">
-  <strong><a href="http://www.chromeexperiments.com/globe">WebGL Globe</a></strong> <span class="bull">&bull;</span> Created by the Google Data Arts Team
-</div>
-
-<div id="title">
-  Google Search Volume by Language
-</div>
-
-<a id="ce" href="http://chromeexperiments.com/globe">
-  <span>This is a Chrome Experiment</span>
+<a id="ce" href="http://p2pu.org/en/groups/knight-mozilla-learning-lab/content/full-description/">
 </a>
+<div id="title">
+  <a href="http://twitter.com/#!/search/realtime/%23moznewslab">Twitter activities during the first week of #MozNewsLab</a>
+</div>
 
 
-<script type="text/javascript" src="/globe/third-party/Three/ThreeWebGL.js"></script>
-<script type="text/javascript" src="/globe/third-party/Three/ThreeExtras.js"></script>
-<script type="text/javascript" src="/globe/third-party/Three/RequestAnimationFrame.js"></script>
-<script type="text/javascript" src="/globe/third-party/Three/Detector.js"></script>
-<script type="text/javascript" src="/globe/globe.js"></script>
+<script type="text/javascript" src="third-party/Three/ThreeWebGL.js"></script>
+<script type="text/javascript" src="third-party/Three/ThreeExtras.js"></script>
+<script type="text/javascript" src="third-party/Three/RequestAnimationFrame.js"></script>
+<script type="text/javascript" src="third-party/Three/Detector.js"></script>
+<script type="text/javascript" src="globe.js"></script>
 <script type="text/javascript">
 
   var globe = DAT.Globe(document.getElementById('container'), function(label) {
+
     return new THREE.Color([
       0xd9d9d9, 0xb6b4b5, 0x9966cc, 0x15adff, 0x3e66a3,
       0x216288, 0xff7e7e, 0xff1f13, 0xc0120b, 0x5a1301, 0xffcc02,
@@ -123,7 +122,8 @@
   });
 
   xhr = new XMLHttpRequest();
-  xhr.open('GET', '/globe-search/search.json', true);
+  //xhr.open('GET', '/globe-search/search.json', true);
+  xhr.open('GET', 'data.json', true);
   xhr.onreadystatechange = function(e) {
     if (xhr.readyState === 4) {
       if (xhr.status === 200) {
