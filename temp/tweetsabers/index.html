@@ -51,8 +51,8 @@
       width: 320px;
       left: 20px;
       background-color: rgba(0, 0, 0, 0.2);
-      font: 20px;
-      padding: 3px;
+      font: 20px/20px Georgia;
+      padding: 15px;
     }
 
     .year {
@@ -83,11 +83,9 @@
       height: 106px;
       display: block;
       position: absolute;
-      bottom: 50px;
-      left: 35px;
+      bottom: 15px;
+      left: 20px;
       background: url(moznewslab.jpg);
-      -moz-border-radius: 5px;
-      border-radius: 5px;
     }
 
 
@@ -104,12 +102,12 @@
   the code</a> <span class="bull">&bull;</span> Borrowed totally from the JEDI masters at Google Data Arts Team</a>
 </div>
 
-<a id="ce" href="http://p2pu.org/en/groups/knight-mozilla-learning-lab/content/full-description/">
-</a>
 <div id="title">
   <a href="http://twitter.com/#!/search/realtime/%23moznewslab">Tweetsabers of News!</a>
 </div>
 
+<a id="ce" href="http://p2pu.org/en/groups/knight-mozilla-learning-lab/content/full-description/">
+</a>
 
 <script type="text/javascript" src="third-party/Three/ThreeWebGL.js"></script>
 <script type="text/javascript" src="third-party/Three/ThreeExtras.js"></script>
@@ -130,7 +128,7 @@
 
   xhr = new XMLHttpRequest();
   //xhr.open('GET', '/globe-search/search.json', true);
-  xhr.open('GET', 'data.json', true);
+  xhr.open('GET', '/globe-search/data.json', true);
   xhr.onreadystatechange = function(e) {
     if (xhr.readyState === 4) {
       if (xhr.status === 200) {
