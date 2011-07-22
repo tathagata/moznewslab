@@ -1,0 +1,36 @@
+<mockup version="1.0" skin="sketch" measuredW="1597" measuredH="876" mockupW="1295" mockupH="876">
+  <controls>
+    <control controlID="382" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="302" y="0" w="1295" h="876" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Reveal%20-%20We%20kick%20evil%20ass%0Ahttp%3A//revealit.net</text>
+      </controlProperties>
+    </control>
+    <control controlID="383" controlTypeID="com.balsamiq.mockups::TextInput" x="728" y="448" w="275" h="-1" measuredW="136" measuredH="29" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>16777215</color>
+        <text>Click%20to%20upload%20files</text>
+      </controlProperties>
+    </control>
+    <control controlID="384" controlTypeID="com.balsamiq.mockups::Label" x="836" y="385" w="-1" h="-1" measuredW="91" measuredH="34" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>13576743</color>
+        <italic>true</italic>
+        <size>20</size>
+        <text>Reveal%20it</text>
+        <textOrientation>right</textOrientation>
+      </controlProperties>
+    </control>
+    <control controlID="385" controlTypeID="com.balsamiq.mockups::Button" x="1009" y="448" w="-1" h="-1" measuredW="67" measuredH="28" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Reveal%21</text>
+      </controlProperties>
+    </control>
+    <control controlID="386" controlTypeID="com.balsamiq.mockups::Image" x="717" y="140" w="-1" h="-1" measuredW="500" measuredH="468" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>false</bold>
+        <filter>true</filter>
+        <src>http%3A//farm1.static.flickr.com/86/235242742_aabb11bb1e.jpg</src>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>

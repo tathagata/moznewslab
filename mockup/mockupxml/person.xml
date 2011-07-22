@@ -1,0 +1,410 @@
+<mockup version="1.0" skin="sketch" measuredW="1812" measuredH="910" mockupW="1521" mockupH="904">
+  <controls>
+    <control controlID="315" controlTypeID="__group__" x="291" y="6" w="1521" h="904" measuredW="1521" measuredH="904" zOrder="0" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="0" y="0" w="1521" h="904" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="315">
+          <controlProperties>
+            <text>Reveal%20-%20we%20kick%20evil%20ass%21%0Ahttp%3A//reveal.it</text>
+          </controlProperties>
+        </control>
+        <control controlID="16" controlTypeID="com.balsamiq.mockups::VerticalTabBar" x="637" y="127" w="605" h="732" measuredW="200" measuredH="294" zOrder="1" locked="false" isInGroup="315">
+          <controlProperties>
+            <position>right</position>
+            <selectedIndex>0</selectedIndex>
+            <text>All%20%2823%25%29%0ANews%20%282%25%29%0AGoogle%20%2810%25%29%0AWikipedia%20%283%25%29%0ATwitter%20%284%25%29%0AYouube%20%281%25%29%0AMap%282%25%29%0A%28+%29Add%20Source</text>
+          </controlProperties>
+        </control>
+        <control controlID="43" controlTypeID="__group__" x="680" y="238" w="428" h="341" measuredW="428" measuredH="341" zOrder="2" locked="false" isInGroup="315">
+          <groupChildrenDescriptors>
+            <control controlID="0" controlTypeID="__group__" x="0" y="0" w="428" h="84" measuredW="428" measuredH="84" zOrder="0" locked="false" isInGroup="43">
+              <groupChildrenDescriptors>
+                <control controlID="0" controlTypeID="__group__" x="0" y="0" w="428" h="84" measuredW="428" measuredH="84" zOrder="0" locked="false" isInGroup="0">
+                  <groupChildrenDescriptors>
+                    <control controlID="0" controlTypeID="__group__" x="0" y="0" w="428" h="84" measuredW="428" measuredH="84" zOrder="0" locked="false" isInGroup="0">
+                      <groupChildrenDescriptors>
+                        <control controlID="0" controlTypeID="com.balsamiq.mockups::TextArea" x="0" y="0" w="428" h="84" measuredW="200" measuredH="140" zOrder="0" locked="false" isInGroup="0">
+                          <controlProperties>
+                            <text>%20%0AThe%20Millennium%20Summit%20was%20a%20meeting%20among%20many%20world%20leaders%20lasting%20three%20days%20from%206%20September%5B1%5D%20to%208%20September%202000</text>
+                          </controlProperties>
+                        </control>
+                      </groupChildrenDescriptors>
+                    </control>
+                  </groupChildrenDescriptors>
+                </control>
+                <control controlID="2" controlTypeID="com.balsamiq.mockups::Link" x="9" y="6" w="-1" h="-1" measuredW="109" measuredH="25" zOrder="1" locked="false" isInGroup="0">
+                  <controlProperties>
+                    <text>Millenium%20Summit</text>
+                  </controlProperties>
+                </control>
+              </groupChildrenDescriptors>
+            </control>
+            <control controlID="1" controlTypeID="__group__" x="0" y="84" w="428" h="84" measuredW="428" measuredH="84" zOrder="1" locked="false" isInGroup="43">
+              <groupChildrenDescriptors>
+                <control controlID="0" controlTypeID="__group__" x="0" y="0" w="428" h="84" measuredW="428" measuredH="84" zOrder="0" locked="false" isInGroup="1">
+                  <groupChildrenDescriptors>
+                    <control controlID="1" controlTypeID="__group__" x="0" y="0" w="428" h="84" measuredW="428" measuredH="84" zOrder="0" locked="false" isInGroup="0">
+                      <groupChildrenDescriptors>
+                        <control controlID="0" controlTypeID="com.balsamiq.mockups::TextArea" x="0" y="0" w="428" h="84" measuredW="200" measuredH="140" zOrder="0" locked="false" isInGroup="1">
+                          <controlProperties>
+                            <text>%20%0AZimbabwe%20has%20refused%20to%20let%20Kofi%20Annan%2C%20Jimmy%20Carter%20and%20a%20</text>
+                          </controlProperties>
+                        </control>
+                      </groupChildrenDescriptors>
+                    </control>
+                  </groupChildrenDescriptors>
+                </control>
+              </groupChildrenDescriptors>
+            </control>
+            <control controlID="2" controlTypeID="com.balsamiq.mockups::Image" x="352" y="92" w="68" h="67" measuredW="361" measuredH="500" zOrder="2" locked="false" isInGroup="43">
+              <controlProperties>
+                <src>http%3A//farm3.static.flickr.com/2468/3901729618_383db40a23.jpg</src>
+              </controlProperties>
+            </control>
+            <control controlID="3" controlTypeID="com.balsamiq.mockups::Link" x="7" y="91" w="-1" h="-1" measuredW="349" measuredH="25" zOrder="3" locked="false" isInGroup="43">
+              <controlProperties>
+                <text>Zimbabwe%20Refuses%20Entry%20To%20Jimmy%20Carter%2C%20Kofi%20Annan</text>
+              </controlProperties>
+            </control>
+            <control controlID="4" controlTypeID="__group__" x="0" y="169" w="428" h="84" measuredW="428" measuredH="84" zOrder="4" locked="false" isInGroup="43">
+              <groupChildrenDescriptors>
+                <control controlID="0" controlTypeID="__group__" x="0" y="0" w="428" h="84" measuredW="428" measuredH="84" zOrder="0" locked="false" isInGroup="4">
+                  <groupChildrenDescriptors>
+                    <control controlID="0" controlTypeID="__group__" x="0" y="0" w="428" h="84" measuredW="428" measuredH="84" zOrder="0" locked="false" isInGroup="0">
+                      <groupChildrenDescriptors>
+                        <control controlID="0" controlTypeID="com.balsamiq.mockups::TextArea" x="0" y="0" w="428" h="84" measuredW="200" measuredH="140" zOrder="0" locked="false" isInGroup="0">
+                          <controlProperties>
+                            <text>%20%0AIn%20an%20exclusive%20interview%2C%20Kofi%20Annan%20says%20he%20is%20ready%20to%20help%20Zimbabwe%20through%20its%20crisis%20but%20warns%20against%20judging%20the%20whole%20of%20Africa</text>
+                          </controlProperties>
+                        </control>
+                      </groupChildrenDescriptors>
+                    </control>
+                  </groupChildrenDescriptors>
+                </control>
+                <control controlID="1" controlTypeID="com.balsamiq.mockups::Image" x="352" y="8" w="68" h="67" measuredW="500" measuredH="500" zOrder="1" locked="false" isInGroup="4">
+                  <controlProperties>
+                    <src>http%3A//farm1.static.flickr.com/8/6737055_d06d4c37a6.jpg</src>
+                  </controlProperties>
+                </control>
+                <control controlID="2" controlTypeID="com.balsamiq.mockups::Link" x="9" y="6" w="-1" h="-1" measuredW="230" measuredH="25" zOrder="2" locked="false" isInGroup="4">
+                  <controlProperties>
+                    <text>Kofi%20Annan%3A%20Zimbawe%20shames%20Africa</text>
+                  </controlProperties>
+                </control>
+              </groupChildrenDescriptors>
+            </control>
+            <control controlID="5" controlTypeID="__group__" x="0" y="257" w="428" h="84" measuredW="428" measuredH="84" zOrder="5" locked="false" isInGroup="43">
+              <groupChildrenDescriptors>
+                <control controlID="0" controlTypeID="__group__" x="0" y="0" w="428" h="84" measuredW="428" measuredH="84" zOrder="0" locked="false" isInGroup="5">
+                  <groupChildrenDescriptors>
+                    <control controlID="0" controlTypeID="__group__" x="0" y="0" w="428" h="84" measuredW="428" measuredH="84" zOrder="0" locked="false" isInGroup="0">
+                      <groupChildrenDescriptors>
+                        <control controlID="0" controlTypeID="com.balsamiq.mockups::TextArea" x="0" y="0" w="428" h="84" measuredW="200" measuredH="140" zOrder="0" locked="false" isInGroup="0">
+                          <controlProperties>
+                            <text>%20%0AIn%20an%20exclusive%20interview%2C%20Kofi%20Annan%20says%20he%20is%20ready%20to%20help%20Zimbabwe%20through%20its%20crisis%20but%20warns%20against%20judging%20the%20whole%20of%20Africa</text>
+                          </controlProperties>
+                        </control>
+                      </groupChildrenDescriptors>
+                    </control>
+                  </groupChildrenDescriptors>
+                </control>
+                <control controlID="1" controlTypeID="com.balsamiq.mockups::Image" x="353" y="6" w="68" h="67" measuredW="500" measuredH="500" zOrder="1" locked="false" isInGroup="5">
+                  <controlProperties>
+                    <src>http%3A//farm1.static.flickr.com/8/6737055_d06d4c37a6.jpg</src>
+                  </controlProperties>
+                </control>
+                <control controlID="2" controlTypeID="com.balsamiq.mockups::Link" x="9" y="6" w="-1" h="-1" measuredW="230" measuredH="25" zOrder="2" locked="false" isInGroup="5">
+                  <controlProperties>
+                    <text>Kofi%20Annan%3A%20Zimbawe%20shames%20Africa</text>
+                  </controlProperties>
+                </control>
+              </groupChildrenDescriptors>
+            </control>
+          </groupChildrenDescriptors>
+        </control>
+        <control controlID="45" controlTypeID="com.balsamiq.mockups::ProgressBar" x="752" y="168" w="179" h="20" measuredW="100" measuredH="20" zOrder="3" locked="false" isInGroup="315">
+          <controlProperties>
+            <indeterminate>false</indeterminate>
+            <scrollBarValue>13</scrollBarValue>
+          </controlProperties>
+        </control>
+        <control controlID="49" controlTypeID="com.balsamiq.mockups::Label" x="663" y="171" w="72" h="25" measuredW="72" measuredH="25" zOrder="4" locked="false" isInGroup="315">
+          <controlProperties>
+            <text>REVEALED</text>
+          </controlProperties>
+        </control>
+        <control controlID="55" controlTypeID="com.balsamiq.mockups::Label" x="938" y="169" w="32" h="25" measuredW="32" measuredH="25" zOrder="6" locked="false" isInGroup="315">
+          <controlProperties>
+            <text>23%25</text>
+          </controlProperties>
+        </control>
+        <control controlID="63" controlTypeID="__group__" x="137" y="309" w="470" h="550" measuredW="470" measuredH="550" zOrder="7" locked="false" isInGroup="315">
+          <groupChildrenDescriptors>
+            <control controlID="0" controlTypeID="com.balsamiq.mockups::VerticalTabBar" x="0" y="0" w="470" h="550" measuredW="200" measuredH="269" zOrder="0" locked="false" isInGroup="63">
+              <controlProperties>
+                <hrefs>%2C%2C%2C%2C%2C%2C</hrefs>
+                <selectedIndex>1</selectedIndex>
+                <text>All%0APerson%0ALocation%0ADate%0AOrganization%0ATopic%20Cloud%0AVisalization</text>
+                <value>0</value>
+                <verticalScrollbar>true</verticalScrollbar>
+              </controlProperties>
+            </control>
+            <control controlID="1" controlTypeID="com.balsamiq.mockups::TextArea" x="96" y="8" w="350" h="359" measuredW="200" measuredH="140" zOrder="1" locked="false" isInGroup="63">
+              <controlProperties>
+                <size>8</size>
+                <text>C%20O%20N%20F%20I%20D%20E%20N%20T%20I%20A%20L%20SECTION%2001%20OF%2002%20%5BHARARE%5D%20005461%20SIPDIS%20NSC%20FOR%20SENIOR%20AFRICA%20DIRECTOR%20%5BGAYLE%20SMITH%5D%20%5BLOC%20LONDON%20%20%5D%20FOR%20%5BCHARLES%20GURNEY%5D%20PARIS%20FOR%20%5BBISA%20WILLIAMS%5D%20PASS%20USTR%20FOR%20%5BROSA%20WHITAKER%5D%20EO%2012958%20DECL%3A%20%5B09/21/10%5D%20TAGS%20PGOV%2C%20PINS%20%2C%20ZI%20%2C%20%5BMDC%20%5D%20%2C%20ZANU-PF%20SUBJECT%3A%20ZANU-PF%20REPORTEDLY%20INTERESTED%20IN%20DEAL%20WITH%20%5BMDC%5D%20THAT%20INVOLVES%20MUGABE%u2019S%20DEPARTURE%20REF%3A%20%5BHARARE%5D%205346%20CONFIDENTIAL%20PAGE%2002%20%5BHARARE%20%20%5D%20%20CLASSIFIED%20BY%20DCM%20%5BEARL%20IRVING%5D.%0AACCORDING%20TO%20A%20SENIOR%20%5BMDC%5D%20ADVISOR%20%2C%20%5BTHE%20OPPOSITION%5D%20PARTY%20HAS%20RECEIVED%20ADDITIONAL%20FEELERS%20FROM%20ZANU-PF%20ABOUT%20MAKING%20A%20DEAL%20THAT%20INVOLVES%20PRESIDENT%20%5BMUGABE%5D%u2019S%20DEPARTURE%20FROM%20OFFICE.%20%5BMDC%5D%20PRESIDENT%20%5BMORGAN%20TSVANGIRAI%5D%20IS%20REPORTEDLY%20WILLING%20TO%20AGREE%20TO%20A%20GRACEFUL%20EXIT%20FOR%20MUGABE%20BECAUSE%20IT%20IS%20IN%20ZIMBABWE%u2019S%20NATIONAL%20INTEREST.%0ATHE%20%5BMDC%20%5D%20ADVISOR%20SAID%20%5BKOFI%20ANNAN%5D%20RECENTLY%20OFFERED%20MUGABE%20A%20PACKAGE%20TO%20STEP%20DOWN%20%2C%20WHICH%20HE%20DECLINED%2C%20AND%20THAT%20A%20SHADY%20ZIMBABWEAN%20BUSINESSMAN%20HAS%20TOLD%20ZANU-PF%20HE%20IS%20WILLING%20TO%20FINANCE%20A%20%u201CRETIREMENT%20PACKAGE%u201D%20FOR%20THE%20PRESIDENT.%20MEANWHILE%20%2C%20XXXXXXXXXXXX%20HAS%20BEEN%20ASKED%20BY%20THE%20%5BMDC%5D%20TO%20ORGANIZE%20A%20PRIVATE%20SECTOR%20INITIATIVE%20FOCUSED%20ON%20FORGING%20AN%20AGREEMENT%20BETWEEN%20ZANU-PF%20AND%20THE%20%5BMDC%5D%20ON%20A%20WAY%20OUT%20OF%20ZIMBABWE%u2019S%20CURRENT%20MESS%20.%0AEND%20SUMMARY%20.%0AXXXXXXXXXXXX%20DID%20NOT%20KNOW%20WHETHER%20XXXXXXXXXXXX%20HAD%20SUFFICIENT%20RESOURCES%20TO%20MAKE%20SUCH%20A%20PACKAGE%20ATTRACTIVE%20CONFIDENTIAL%20PAGE%2004%20%5BHARARE%20%20%5D%2005461%2001%20OF%2002%20271458Z%20ENOUGH%20%2C%20BUT%20HE%20CLAIMED%20THAT%20XXXXXXXXXXXX%20WORKED%20FOR%20%5BMI6%5D%20AND%20COULD%20BE%20A%20CHANNEL%20FOR%20THE%20BRITISH%20TO%20PROVIDE%20FUNDS%20TO%20SWEETEN%20THE%20DEAL%20.%0A%28%20COMMENT%3A%20THE%20BRITISH%20HIGH%20COMMISSION%20HERE%20SCOFFED%20AT%20THE%20VERY%20IDEA%20.</text>
+              </controlProperties>
+            </control>
+            <control controlID="2" controlTypeID="com.balsamiq.mockups::CallOut" x="401" y="171" w="47" h="33" measuredW="52" measuredH="40" zOrder="2" locked="false" isInGroup="63">
+              <controlProperties>
+                <text>12k</text>
+              </controlProperties>
+            </control>
+            <control controlID="3" controlTypeID="com.balsamiq.mockups::CallOut" x="401" y="282" w="45" h="32" measuredW="54" measuredH="40" zOrder="3" locked="false" isInGroup="63">
+              <controlProperties>
+                <text>10K</text>
+              </controlProperties>
+            </control>
+            <control controlID="4" controlTypeID="com.balsamiq.mockups::TextArea" x="162" y="409" w="284" h="39" measuredW="200" measuredH="140" zOrder="4" locked="false" isInGroup="63">
+              <controlProperties>
+                <size>9</size>
+                <text>Cool...%20%20I%20think%20Kofi%20really%20loves%20Africa%21%20Mugabe%20is%20a%20dick%21</text>
+              </controlProperties>
+            </control>
+            <control controlID="6" controlTypeID="com.balsamiq.mockups::Label" x="99" y="383" w="71" h="25" measuredW="71" measuredH="25" zOrder="5" locked="false" isInGroup="63">
+              <controlProperties>
+                <text>Comments%3A</text>
+              </controlProperties>
+            </control>
+            <control controlID="7" controlTypeID="com.balsamiq.mockups::Icon" x="131" y="409" w="-1" h="-1" measuredW="16" measuredH="16" zOrder="6" locked="false" isInGroup="63">
+              <controlProperties>
+                <icon>ContactIcon%7Cxsmall</icon>
+              </controlProperties>
+            </control>
+            <control controlID="8" controlTypeID="com.balsamiq.mockups::TextArea" x="245" y="367" w="194" h="22" measuredW="200" measuredH="140" zOrder="7" locked="false" isInGroup="63">
+              <controlProperties>
+                <backgroundAlpha>0.5</backgroundAlpha>
+                <color>13576743</color>
+                <text>africa%2C%20kofi%20annan%2C%20mugabe%2C%20zimbawe</text>
+              </controlProperties>
+            </control>
+            <control controlID="10" controlTypeID="com.balsamiq.mockups::TextArea" x="182" y="451" w="264" h="39" measuredW="200" measuredH="140" zOrder="8" locked="false" isInGroup="63">
+              <controlProperties>
+                <size>9</size>
+                <text>I%20wonder%20how%20much%20he%20was%20offered%20for%20stepping%20down%21</text>
+              </controlProperties>
+            </control>
+            <control controlID="11" controlTypeID="com.balsamiq.mockups::Icon" x="154" y="456" w="-1" h="-1" measuredW="16" measuredH="16" zOrder="9" locked="false" isInGroup="63">
+              <controlProperties>
+                <icon>ContactIcon%7Cxsmall</icon>
+              </controlProperties>
+            </control>
+          </groupChildrenDescriptors>
+        </control>
+        <control controlID="72" controlTypeID="__group__" x="1009" y="174" w="80" h="50" measuredW="80" measuredH="50" zOrder="5" locked="false" isInGroup="315">
+          <groupChildrenDescriptors>
+            <control controlID="0" controlTypeID="com.balsamiq.mockups::Icon" x="0" y="0" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="0" locked="false" isInGroup="72">
+              <controlProperties>
+                <borderStyle>square</borderStyle>
+                <icon>TwitterIcon%7Csmall</icon>
+              </controlProperties>
+            </control>
+            <control controlID="1" controlTypeID="com.balsamiq.mockups::Icon" x="28" y="0" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="1" locked="false" isInGroup="72">
+              <controlProperties>
+                <borderStyle>square</borderStyle>
+                <color>0</color>
+                <icon>FacebookIcon%7Csmall</icon>
+              </controlProperties>
+            </control>
+            <control controlID="2" controlTypeID="com.balsamiq.mockups::Icon" x="56" y="0" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="2" locked="false" isInGroup="72">
+              <controlProperties>
+                <icon>YouTubeIcon%7Csmall</icon>
+              </controlProperties>
+            </control>
+            <control controlID="3" controlTypeID="com.balsamiq.mockups::Label" x="19" y="25" w="46" h="25" measuredW="46" measuredH="25" zOrder="3" locked="false" isInGroup="72">
+              <controlProperties>
+                <text>Reveal</text>
+              </controlProperties>
+            </control>
+          </groupChildrenDescriptors>
+        </control>
+        <control controlID="73" controlTypeID="com.balsamiq.mockups::Label" x="666" y="199" w="-1" h="-1" measuredW="260" measuredH="29" zOrder="9" locked="false" isInGroup="315">
+          <controlProperties>
+            <italic>true</italic>
+            <size>16</size>
+            <text>How%20much%20does%20the%20world%20know%3F</text>
+          </controlProperties>
+        </control>
+        <control controlID="77" controlTypeID="__group__" x="678" y="589" w="427" h="100" measuredW="427" measuredH="100" zOrder="8" locked="false" isInGroup="315">
+          <groupChildrenDescriptors>
+            <control controlID="0" controlTypeID="com.balsamiq.mockups::VideoPlayer" x="47" y="1" w="99" h="99" measuredW="300" measuredH="200" zOrder="0" locked="false" isInGroup="77"/>
+            <control controlID="1" controlTypeID="com.balsamiq.mockups::Image" x="47" y="5" w="99" h="59" measuredW="354" measuredH="500" zOrder="1" locked="false" isInGroup="77">
+              <controlProperties>
+                <src>http%3A//farm1.static.flickr.com/25/346731834_72f93e2300.jpg</src>
+              </controlProperties>
+            </control>
+            <control controlID="2" controlTypeID="__group__" x="173" y="0" w="98" h="100" measuredW="98" measuredH="100" zOrder="2" locked="false" isInGroup="77">
+              <groupChildrenDescriptors>
+                <control controlID="0" controlTypeID="com.balsamiq.mockups::VideoPlayer" x="0" y="0" w="98" h="100" measuredW="300" measuredH="200" zOrder="0" locked="false" isInGroup="2"/>
+                <control controlID="1" controlTypeID="com.balsamiq.mockups::Image" x="0" y="3" w="98" h="64" measuredW="500" measuredH="250" zOrder="1" locked="false" isInGroup="2">
+                  <controlProperties>
+                    <src>http%3A//farm4.static.flickr.com/3289/2809985754_8d021fdbc1.jpg</src>
+                  </controlProperties>
+                </control>
+              </groupChildrenDescriptors>
+            </control>
+            <control controlID="3" controlTypeID="com.balsamiq.mockups::Icon" x="379" y="37" w="-1" h="-1" measuredW="48" measuredH="48" zOrder="3" locked="false" isInGroup="77">
+              <controlProperties>
+                <icon>GtIcon%7Clarge</icon>
+              </controlProperties>
+            </control>
+            <control controlID="4" controlTypeID="com.balsamiq.mockups::Icon" x="0" y="37" w="-1" h="-1" measuredW="48" measuredH="48" zOrder="4" locked="false" isInGroup="77">
+              <controlProperties>
+                <icon>GtIcon%7Clarge</icon>
+                <rotation>180</rotation>
+              </controlProperties>
+            </control>
+            <control controlID="5" controlTypeID="__group__" x="287" y="11" w="95" h="80" measuredW="95" measuredH="80" zOrder="5" locked="false" isInGroup="77">
+              <groupChildrenDescriptors>
+                <control controlID="0" controlTypeID="__group__" x="0" y="0" w="95" h="80" measuredW="95" measuredH="80" zOrder="0" locked="false" isInGroup="5">
+                  <groupChildrenDescriptors>
+                    <control controlID="0" controlTypeID="com.balsamiq.mockups::Canvas" x="0" y="0" w="95" h="80" measuredW="100" measuredH="70" zOrder="0" locked="false" isInGroup="0"/>
+                  </groupChildrenDescriptors>
+                </control>
+              </groupChildrenDescriptors>
+            </control>
+            <control controlID="6" controlTypeID="__group__" x="292" y="15" w="84" h="71" measuredW="84" measuredH="71" zOrder="6" locked="false" isInGroup="77">
+              <groupChildrenDescriptors>
+                <control controlID="0" controlTypeID="com.balsamiq.mockups::Map" x="0" y="0" w="84" h="71" measuredW="252" measuredH="222" zOrder="0" locked="false" isInGroup="6"/>
+              </groupChildrenDescriptors>
+            </control>
+          </groupChildrenDescriptors>
+        </control>
+        <control controlID="84" controlTypeID="__group__" x="660" y="764" w="461" h="74" measuredW="461" measuredH="74" zOrder="10" locked="false" isInGroup="315">
+          <groupChildrenDescriptors>
+            <control controlID="0" controlTypeID="com.balsamiq.mockups::FieldSet" x="0" y="0" w="461" h="74" measuredW="200" measuredH="170" zOrder="0" locked="false" isInGroup="84">
+              <controlProperties>
+                <text>Filter%20results</text>
+              </controlProperties>
+            </control>
+            <control controlID="1" controlTypeID="com.balsamiq.mockups::SearchBox" x="17" y="13" w="206" h="-1" measuredW="155" measuredH="25" zOrder="1" locked="false" isInGroup="84">
+              <controlProperties>
+                <text>search%20wih%20in%20results</text>
+              </controlProperties>
+            </control>
+            <control controlID="2" controlTypeID="com.balsamiq.mockups::DateChooser" x="346" y="9" w="106" h="-1" measuredW="106" measuredH="29" zOrder="2" locked="false" isInGroup="84"/>
+            <control controlID="3" controlTypeID="com.balsamiq.mockups::DateChooser" x="346" y="34" w="106" h="-1" measuredW="106" measuredH="29" zOrder="3" locked="false" isInGroup="84"/>
+            <control controlID="4" controlTypeID="com.balsamiq.mockups::Label" x="296" y="12" w="47" h="18" measuredW="47" measuredH="25" zOrder="4" locked="false" isInGroup="84">
+              <controlProperties>
+                <text>Before</text>
+              </controlProperties>
+            </control>
+            <control controlID="5" controlTypeID="com.balsamiq.mockups::Label" x="301" y="33" w="41" h="18" measuredW="41" measuredH="25" zOrder="5" locked="false" isInGroup="84">
+              <controlProperties>
+                <text>After</text>
+              </controlProperties>
+            </control>
+            <control controlID="6" controlTypeID="com.balsamiq.mockups::CheckBoxGroup" x="30" y="30" w="113" h="37" measuredW="91" measuredH="100" zOrder="6" locked="false" isInGroup="84">
+              <controlProperties>
+                <text>%5B%20%5D%20images%0A%5Bx%5D%20videos%0A-%5B%20%5D%20maps%20-%0A-%5Bx%5D%20NY%20times%20-</text>
+              </controlProperties>
+            </control>
+          </groupChildrenDescriptors>
+        </control>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="320" controlTypeID="com.balsamiq.mockups::Paragraph" x="1578" y="188" w="-1" h="-1" measuredW="200" measuredH="140" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>*Reveal*%20*Stats%3A*%0ALatest%20activity%20*3%3A24pm*%20on%20Tuesday.%0AIn%20Group%3A%20%5BPolitics%5D%20%5B%28Africa%29%5D%0AThis%20cable%20has%20been%20viewed%20%5B3858%5D%20times%3B%20it%20has%20%5B1%5D%20monitor%20with%20%5B91567%5D%20topic%20followers%20and%20%5B0%5D%20aliases%20exist.</text>
+      </controlProperties>
+    </control>
+    <control controlID="321" controlTypeID="com.balsamiq.mockups::Icon" x="1578" y="343" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>ContactIcon%7Csmall</icon>
+      </controlProperties>
+    </control>
+    <control controlID="322" controlTypeID="com.balsamiq.mockups::Icon" x="1578" y="365" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>ContactIcon%7Csmall</icon>
+      </controlProperties>
+    </control>
+    <control controlID="323" controlTypeID="com.balsamiq.mockups::Icon" x="1578" y="385" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>ContactIcon%7Csmall</icon>
+      </controlProperties>
+    </control>
+    <control controlID="324" controlTypeID="com.balsamiq.mockups::Icon" x="1578" y="405" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>ContactIcon%7Csmall</icon>
+      </controlProperties>
+    </control>
+    <control controlID="325" controlTypeID="com.balsamiq.mockups::Icon" x="1598" y="345" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>ContactIcon%7Csmall</icon>
+      </controlProperties>
+    </control>
+    <control controlID="326" controlTypeID="com.balsamiq.mockups::Icon" x="1598" y="365" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>13369344</color>
+        <icon>ContactIcon%7Csmall</icon>
+      </controlProperties>
+    </control>
+    <control controlID="327" controlTypeID="com.balsamiq.mockups::Icon" x="1598" y="385" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>ContactIcon%7Csmall</icon>
+      </controlProperties>
+    </control>
+    <control controlID="328" controlTypeID="com.balsamiq.mockups::Icon" x="1598" y="405" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="9" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>13576743</color>
+        <icon>ContactIcon%7Csmall</icon>
+      </controlProperties>
+    </control>
+    <control controlID="329" controlTypeID="com.balsamiq.mockups::Icon" x="1622" y="345" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="10" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>ContactIcon%7Csmall</icon>
+      </controlProperties>
+    </control>
+    <control controlID="330" controlTypeID="com.balsamiq.mockups::Icon" x="1622" y="365" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="11" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>16370588</color>
+        <icon>ContactIcon%7Csmall</icon>
+      </controlProperties>
+    </control>
+    <control controlID="331" controlTypeID="com.balsamiq.mockups::Icon" x="1622" y="385" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="12" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>ContactIcon%7Csmall</icon>
+      </controlProperties>
+    </control>
+    <control controlID="332" controlTypeID="com.balsamiq.mockups::Icon" x="1622" y="405" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="13" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>ContactIcon%7Csmall</icon>
+      </controlProperties>
+    </control>
+    <control controlID="333" controlTypeID="com.balsamiq.mockups::Icon" x="1642" y="345" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="14" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>ContactIcon%7Csmall</icon>
+      </controlProperties>
+    </control>
+    <control controlID="334" controlTypeID="com.balsamiq.mockups::Icon" x="1642" y="365" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="15" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>ContactIcon%7Csmall</icon>
+      </controlProperties>
+    </control>
+    <control controlID="335" controlTypeID="com.balsamiq.mockups::Icon" x="1642" y="385" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="16" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>ContactIcon%7Csmall</icon>
+      </controlProperties>
+    </control>
+    <control controlID="336" controlTypeID="com.balsamiq.mockups::Icon" x="1642" y="405" w="-1" h="-1" measuredW="24" measuredH="24" zOrder="17" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>ContactIcon%7Csmall</icon>
+      </controlProperties>
+    </control>
+    <control controlID="355" controlTypeID="com.balsamiq.mockups::HRule" x="1576" y="326" w="182" h="-1" measuredW="100" measuredH="5" zOrder="18" locked="false" isInGroup="-1"/>
+    <control controlID="356" controlTypeID="com.balsamiq.mockups::CoverFlow" x="519" y="135" w="381" h="153" measuredW="493" measuredH="198" zOrder="19" locked="false" isInGroup="-1">
+      <controlProperties>
+        <src>http%3A//farm4.static.flickr.com/3519/3930054311_12303d6940.jpg</src>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>
