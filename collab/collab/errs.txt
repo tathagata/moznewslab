@@ -1,0 +1,70 @@
+line 34 column 155 - Warning: replacing invalid character code 128
+line 34 column 156 - Warning: replacing invalid character code 156
+line 34 column 183 - Warning: replacing invalid character code 128
+line 34 column 184 - Warning: discarding invalid character code 157
+line 34 column 228 - Warning: replacing invalid character code 128
+line 34 column 229 - Warning: replacing invalid character code 153
+line 41 column 135 - Warning: unescaped & or unknown entity "&d"
+line 41 column 201 - Warning: unescaped & or unknown entity "&r"
+line 45 column 173 - Warning: replacing invalid character code 128
+line 45 column 174 - Warning: replacing invalid character code 156
+line 45 column 200 - Warning: replacing invalid character code 128
+line 45 column 201 - Warning: discarding invalid character code 157
+line 45 column 343 - Warning: replacing invalid character code 128
+line 45 column 344 - Warning: replacing invalid character code 153
+line 49 column 125 - Warning: unescaped & or unknown entity "&d"
+line 49 column 191 - Warning: unescaped & or unknown entity "&r"
+line 51 column 128 - Warning: unescaped & or unknown entity "&d"
+line 51 column 194 - Warning: unescaped & or unknown entity "&r"
+line 53 column 130 - Warning: unescaped & or unknown entity "&d"
+line 53 column 196 - Warning: unescaped & or unknown entity "&r"
+line 53 column 402 - Warning: replacing invalid character code 128
+line 53 column 403 - Warning: replacing invalid character code 153
+line 57 column 203 - Warning: replacing invalid character code 128
+line 57 column 204 - Warning: discarding invalid character code 157
+line 57 column 389 - Warning: replacing invalid character code 128
+line 57 column 390 - Warning: replacing invalid character code 153
+line 61 column 134 - Warning: unescaped & or unknown entity "&d"
+line 61 column 200 - Warning: unescaped & or unknown entity "&r"
+line 61 column 428 - Warning: replacing invalid character code 128
+line 61 column 429 - Warning: replacing invalid character code 148
+line 63 column 257 - Warning: unescaped & which should be written as &amp;
+line 34 column 38 - Warning: <img> lacks "alt" attribute
+line 38 column 56 - Warning: <img> lacks "alt" attribute
+line 41 column 57 - Warning: <img> lacks "alt" attribute
+line 43 column 56 - Warning: <img> lacks "alt" attribute
+line 45 column 49 - Warning: <img> lacks "alt" attribute
+line 47 column 51 - Warning: <img> lacks "alt" attribute
+line 49 column 47 - Warning: <img> lacks "alt" attribute
+line 51 column 50 - Warning: <img> lacks "alt" attribute
+line 53 column 52 - Warning: <img> lacks "alt" attribute
+line 55 column 67 - Warning: <img> lacks "alt" attribute
+line 57 column 58 - Warning: <img> lacks "alt" attribute
+line 59 column 52 - Warning: <img> lacks "alt" attribute
+line 61 column 56 - Warning: <img> lacks "alt" attribute
+line 63 column 52 - Warning: <img> lacks "alt" attribute
+Info: Doctype given is "-//W3C//DTD XHTML 1.0 Strict//EN"
+Info: Document content looks like XHTML 1.0 Strict
+45 warnings, 0 errors were found!
+
+Character codes 128 to 159 (U+0080 to U+009F) are not allowed in HTML;
+even if they were, they would likely be unprintable control characters.
+Tidy assumed you wanted to refer to a character with the same byte value in the 
+specified encoding and replaced that reference with the Unicode equivalent.
+
+The alt attribute should be used to give a short description
+of an image; longer descriptions should be given with the
+longdesc attribute which takes a URL linked to the description.
+These measures are needed for people using non-graphical browsers.
+
+For further advice on how to make your pages accessible
+see http://www.w3.org/WAI/GL.
+. You may also want to try
+"http://www.cast.org/bobby/" which is a free Web-based
+service for checking URLs for accessibility.
+
+To learn more about HTML Tidy see http://tidy.sourceforge.net
+Please fill bug reports and queries using the "tracker" on the Tidy web site.
+Additionally, questions can be sent to html-tidy@w3.org
+HTML and CSS specifications are available from http://www.w3.org/
+Lobby your company to join W3C, see http://www.w3.org/Consortium
