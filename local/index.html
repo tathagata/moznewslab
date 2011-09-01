@@ -1,0 +1,102 @@
+<html>
+<head>
+<meta name = "viewport" content = "width = device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no;">		
+<script src="http://code.google.com/apis/gears/gears_init.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/geo.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+<script src="https://www.google.com/jsapi?key=ABQIAAAAEuwUqFVvNIBr6HOzKB5bChSOws5siTiZWjm3qGtMLwNONWiHdxQrP9yGaQR4uBNp3OqkyC4j81vLhg" type="text/javascript"></script>
+<script>
+google.load('search', '1');
+var newsSearch;
+
+
+function initialize_map()
+{
+    var myOptions = {
+	      zoom: 4,
+	      mapTypeControl: true,
+	      mapTypeControlOptions: {style: google.maps.MapTypeControlStyle.DROPDOWN_MENU},
+	      navigationControl: true,
+	      navigationControlOptions: {style: google.maps.NavigationControlStyle.SMALL},
+	      mapTypeId: google.maps.MapTypeId.ROADMAP      
+	    }	
+	map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+}
+function initialize()
+{
+	if(geo_position_js.init())
+	{
+		document.getElementById('current').innerHTML="Receiving...";
+		geo_position_js.getCurrentPosition(show_position,function(){document.getElementById('current').innerHTML="Couldn't get location"},{enableHighAccuracy:true});
+	}
+	else
+	{
+		document.getElementById('current').innerHTML="Functionality not available";
+	}
+}
+
+function searchComplete(){
+	if (newsSearch.results && newsSearch.results.length > 0) {
+        	for (var i = 0; i < newsSearch.results.length; i++) {
+
+            	// Create HTML elements for search results
+            	var p = document.createElement('p');
+            	var a = document.createElement('a');
+            	a.href = newsSearch.results[i].url;
+            	a.innerHTML = newsSearch.results[i].title;
+
+            	// Append search results to the HTML nodes
+            	p.appendChild(a);
+            	document.body.appendChild(p);
+          	}
+   	}
+}
+
+
+
+function show_position(p)
+{
+	document.getElementById('current').innerHTML="latitude="+p.coords.latitude.toFixed(2)+" longitude="+p.coords.longitude.toFixed(2);
+	var pos=new google.maps.LatLng(p.coords.latitude,p.coords.longitude);
+	geocoder = new google.maps.Geocoder();
+	geocoder.geocode({'latLng':pos},function(results,status){
+		
+		if (status== google.maps.GeocoderStatus.OK){
+			if (results[1]){
+				map.setCenter(pos);
+				map.setZoom(14);
+				marker = new google.maps.Marker({
+					position:pos,
+					map:map,
+					title: "You are at"+results[1].formatted_address,
+				});
+				var infowindow = new google.maps.InfoWindow({
+					content:results[0].formatted_address
+				});			
+
+				google.maps.event.addListener(marker,'click',function(){
+					infowindow.open(map,marker);
+					newsSearch = new google.search.NewsSearch();
+					newsSearch.setSearchCompleteCallback(this, searchComplete, null);
+					newsSearch.execute(results[1].formatted_address);
+					google.search.Search.getBranding('branding');					
+				});
+			}	
+		}
+	
+	});
+}
+</script >
+<style>
+	body {font-family: Helvetica;font-size:11pt;padding:0px;margin:0px}
+	#title {background-color:#e22640;padding:5px;}
+	#current {font-size:10pt;padding:5px;}	
+</style>
+</head>
+<body onload="initialize_map();initialize()">
+	<div id="title">Show Position In Map</div>
+	<div id="current">Initializing...</div>
+	<div id="map_canvas" style="width:320px; height:350px"></div>
+	<div id="news"></div>
+</body>
+</html>
